@@ -1,1 +1,110 @@
+: root {
+    --vermelho :  # e50914 ;
+    --preta :  # 141414 ;
+}
 
+* {
+    margem :  0 ;
+    preenchimento :  0 ;
+    dimensionamento da caixa : caixa de borda;
+}
+
+/ * elementos base * /
+corpo {
+    fundo :  var ( --preta );
+    família de fontes :  'Arial' , Times , serif;
+    cor :  rgb ( 255 ,  255 ,  255 );
+
+}
+
+cabeçalho . container {
+    display : flex;
+    direção flexível : fileira;
+    alinhar-itens : centro;
+    justify-content : espaço entre;
+}
+
+cabeçalho . logo {
+    margem esquerda :  8 px ;
+    cor :  var ( --vermelho );
+    família de fontes :  'Arial Black' , Times;
+    tamanho da fonte :  30 px ;
+}
+
+header  nav  a {
+    decoração de texto : nenhum;
+    cor :  # aaa ;
+    margem direita :  10 px ;
+}
+
+header  nav  a : hover {
+    cor :  # ffff ;
+}
+
+/ * filme principal * /
+
+. filme-principal {
+    tamanho da fonte :  17 px ;
+    fundo :  gradiente linear ( rgba ( 0 ,  0 ,  0 , .50 ) ,  rgba ( 0 ,  0 ,  0 , .50 ) 100 % ) ,  url ( '../img/capa-house.jpg' );
+
+    altura :  400 px ;
+    tamanho do fundo : capa;
+
+    display : flex;
+    direção flexível : coluna;
+    justificar-conteúdo : centro;
+    alinhar-itens : flex-start;
+    
+}
+
+. filme-principal . descricao {
+    margem superior :  10 px ;
+    margem inferior :  40 px ;
+}
+
+. filme-principal . titulo {
+    margem superior :  15 % ;
+    família da fonte :  'Trebuchet MS' , Arial , sans-serif;
+    tamanho da fonte :  40 px ;
+}
+
+. botao {
+    cor de fundo : rgba ( 0 ,  0 ,  0 , .50 );
+    fronteira : nenhum;
+    cor : branco;
+
+    preenchimento :  15 px  30 px ;
+    margem direita :  15 px ;
+    tamanho da fonte :  12 px ;
+
+    cursor : ponteiro;
+    transição :  .3 s facilitar tudo;
+}
+
+. botao : hover {
+    cor de fundo : branco;
+    cor :  var ( --preta );
+}
+
+. botao  i {
+    margem direita :  7 px ;
+}
+
+. container {
+    margem esquerda :  10 px ;
+    margem direita :  10 px ;
+}
+
+. filme-principal . container {
+    largura :  70 % ;
+}
+
+. box-filme {
+    altura :  100 % ;
+    largura :  100 % ;
+    display : bloco;
+}
+
+. carrossel-filmes {
+    margem superior :  5 px ;
+}
